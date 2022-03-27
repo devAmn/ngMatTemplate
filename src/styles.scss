@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -20,13 +19,15 @@ $ngMatTemplate-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$ngMatTemplate-theme: mat.define-light-theme((
-  color: (
-    primary: $ngMatTemplate-primary,
-    accent: $ngMatTemplate-accent,
-    warn: $ngMatTemplate-warn,
+$ngMatTemplate-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $ngMatTemplate-primary,
+      accent: $ngMatTemplate-accent,
+      warn: $ngMatTemplate-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -35,5 +36,80 @@ $ngMatTemplate-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.my-5 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.ml-10-mr-20 {
+  margin-left: 10% !important;
+  margin-right: 20% !important;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mt-30 {
+  margin-top: 30%;
+}
+
+.mt-75 {
+  margin-top: 75%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-w-10 {
+  flex-basis: 10%;
+}
+
+.flex-w-25 {
+  flex-basis: 25%;
+}
+
+.flex-w-50 {
+  flex-basis: 50%;
+}
+
+.flex-w-65 {
+  flex-basis: 65%;
+}
+
+.flex-w-75 {
+  flex-basis: 75%;
+}
+
+.flex-w-100 {
+  flex-basis: 100%;
+}
+
+.mat-card,
+.mat-card-content {
+  height: -webkit-fill-available;
+}
+
+.div-height-inherit {
+  height: inherit;
+}
+
+.mat-divider-vertical {
+  height: 100%;
+}
