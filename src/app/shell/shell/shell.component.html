@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+        <ngt-side-nav></ngt-side-nav>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <mat-toolbar color="primary">
+            <button mat-icon-button class="example-icon" (click)="drawer.toggle()"
+                aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>My App</span>
+        </mat-toolbar>
+    </div>
+
+</mat-drawer-container>

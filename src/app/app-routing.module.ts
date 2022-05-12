@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
   },
   {
+    path: 'home',
+    loadChildren: () => import('./shell/shell.module').then(s => s.ShellModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponent
   }

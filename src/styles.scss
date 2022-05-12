@@ -113,3 +113,13 @@ body {
 .mat-divider-vertical {
   height: 100%;
 }
+
+.item-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.w-100 {
+  width: 100%;
+}
