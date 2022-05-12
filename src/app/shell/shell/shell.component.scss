@@ -6,3 +6,19 @@
     min-width: 15%;
     max-width: 20%;
 }
+
+.top-nav {
+    justify-content: space-between;
+
+    &-section-1 {
+        flex: 70%;
+    }
+
+    &-section-2 {
+        flex: 30%;
+
+        .float-right {
+            float: right;
+        }
+    }
+}
